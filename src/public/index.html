@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicação de Cagadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Usuários</h1>
+  <div id="userCards" class="cards-container"></div>
+
+  <!-- Modal para Visualizar Cagadas -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Cagadas de <span id="modalUserName"></span></h2>
+      <ul id="cagadaList"></ul>
+    </div>
+  </div>
+
+  <!-- Caixa para Adicionar Cagada -->
+  <div id="addCagadaContainer" class="add-cagada-container">
+    <input type="text" id="cagadaInput" placeholder="Descreva a cagada" />
+    <button id="submitCagada">Adicionar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
